@@ -2,6 +2,11 @@
 @import "ibg-style.scss";
 @import "mixins.scss";
 //===НАЧАЛО СТИЛЯ===//
+.page{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
 header{
 	background-color: #200320;
 	padding: 50px;
@@ -32,7 +37,12 @@ header{
 	box-shadow: 0 0 10px #EF006FFF, 0 0 40px #EF006FFF, 0 0 80px #EF006FFF;
 	transition-delay: 50ms;
 	}
-button{
+.main{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+.button{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -53,7 +63,7 @@ button{
 	flex-direction: column;
 	&__raw {
 		padding: 5px;
-		flex: 0 1 auto;
+		flex: 1 1 auto;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
@@ -116,6 +126,8 @@ button{
 }
 .block_blue{
 	background-color: #031321;
+	display: flex;
+	flex: 1 0 auto;
 }
 .block__title_blue{
 	color: #2196f3;
@@ -138,9 +150,12 @@ button{
 	line-height: 20px;
 	margin: 0 0 20px 0;
 	animation: neonb 9.7s linear infinite 1.5s;
+	line-height: 30px;
 }
 .block_green{
 	background-color: #032003;
+	display: flex;
+	flex: 1 0 auto;
 }
 .block__title_green{
 	color: #21C400;
@@ -163,9 +178,12 @@ button{
 	line-height: 20px;
 	margin: 0 0 20px 0;
 	animation: neong 8s linear infinite 1.5s;
+	line-height: 30px;
 }
 .block_yellow{
 	background-color: #1C2003;
+	display: flex;
+	flex: 1 0 auto;
 }
 .block__title_yellow{
 	color: #FFC400;
@@ -188,9 +206,12 @@ button{
 	line-height: 20px;
 	margin: 0 0 20px 0;
 	animation: neony 9s linear infinite 1.5s;
+	line-height: 30px;
 }
 .block_red{
 	background-color: #200303;
+	display: flex;
+	flex: 1 0 auto;
 }
 .block__title_red{
 	color: #FF0100;
@@ -213,6 +234,7 @@ button{
 	line-height: 20px;
 	margin: 0 0 20px 0;
 	animation: neonr 8.4s linear infinite 1.5s;
+	line-height: 30px;
 }
 footer{
 	background-color: #001818;
@@ -349,6 +371,69 @@ footer{
 		text-shadow: 0 0 10px #FF0100, 0 0 20px #FF0100;
 	}
 }
+
+@media screen and (min-width:2000px) {
+	.hello {
+		min-width: 450px;
+		min-height: 170px;
+		font-size: 35px;
+		padding: 35px;
+		letter-spacing: 12px;
+		border-radius: 100px;
+	}
+	.bye {
+		min-width: 450px;
+		min-height: 170px;
+		font-size: 35px;
+		padding: 35px;
+		letter-spacing: 12px;
+		border-radius: 100px;
+	}
+	.button{
+		min-width: 450px;
+		min-height: 170px;
+		font-size: 35px;
+		letter-spacing: 10px;
+		font-weight: 400;
+		border-radius: 100px;
+	}
+	.block__title_blue{
+		font-size: 40px;
+		padding: 15px;
+	}
+	.block__sub_blue{
+		font-size: 25px;
+		line-height: 20px;
+		line-height: 40px;
+	}
+	.block__title_green{
+		font-size: 40px;
+		padding: 15px;
+	}
+	.block__sub_green{
+		font-size: 25px;
+		line-height: 20px;
+		line-height: 40px;
+	}
+	.block__title_yellow{
+		font-size: 40px;
+		padding: 15px;
+	}
+	.block__sub_yellow{
+		font-size: 25px;
+		line-height: 20px;
+		line-height: 40px;
+	}
+	.block__title_red{
+		font-size: 40px;
+		padding: 15px;
+	}
+	.block__sub_red{
+		font-size: 25px;
+		line-height: 20px;
+		line-height: 40px;
+	}
+}
 @media screen and (max-width:1024px) {
 	.block__raw{
 		padding: 5px;
@@ -358,8 +443,8 @@ footer{
 		justify-content: center;
 		align-items: center;
 	}
-	button{
-		margin: 20px 0;
+	.button{
+		margin: 25px 0;
 	}
 }
 @media screen and (max-width:600px) {
@@ -392,5 +477,15 @@ footer{
 		font-size: 20px;
 		padding: 5px;
 		letter-spacing: 2px;
+	}
+}
+@media screen and (max-width:320px) {
+	.button{
+		max-width: 200px;
+		min-height: 60px;
+		font-size: 20px;
+		letter-spacing: 2px;
+		border-radius: 50px;
+		text-align: center;
 	}
 }
