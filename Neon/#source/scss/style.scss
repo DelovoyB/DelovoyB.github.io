@@ -56,6 +56,7 @@ header{
 	letter-spacing: 4px;
 	overflow: hidden;
 	transition: 0.35s;
+	text-align: center;
 }
 .block {
 	min-height: 25%;
@@ -115,7 +116,7 @@ header{
 }
 	&__text {
 		color: #000;
-		font-family: comic sans ms;
+		font-family: comic sans ms, consolas, sans-serif;
 		padding: 10px;
 		display: flex;
 		flex-direction: column;
@@ -486,6 +487,5 @@ footer{
 		font-size: 20px;
 		letter-spacing: 2px;
 		border-radius: 50px;
-		text-align: center;
 	}
 }

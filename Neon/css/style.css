@@ -156,7 +156,8 @@ header {
   overflow: hidden;
   -webkit-transition: 0.35s;
   -o-transition: 0.35s;
-  transition: 0.35s; }
+  transition: 0.35s;
+  text-align: center; }
 
 .block {
   min-height: 25%;
@@ -234,7 +235,7 @@ header {
     transition-delay: 50ms; }
   .block__text {
     color: #000;
-    font-family: comic sans ms;
+    font-family: comic sans ms, consolas, sans-serif;
     padding: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -697,5 +698,4 @@ footer {
     min-height: 60px;
     font-size: 20px;
     letter-spacing: 2px;
-    border-radius: 50px;
-    text-align: center; } }
+    border-radius: 50px; } }
