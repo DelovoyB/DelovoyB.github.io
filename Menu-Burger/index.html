@@ -43,6 +43,14 @@
 		<footer>
 	<div class="bye">Goodbye</div>
 </footer>	</div>
+	<script>
+		$(function(){
+			$('.hello__burger').click(function(){
+				$('.hello__burger, .hello__menu, span').toggleClass('active');
+				$('body').toggleClass('lock');
+			});
+		});
+	</script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 	<script src="../js/main.js"></script>
 </body>
