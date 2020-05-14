@@ -1,0 +1,337 @@
+@import "null-style.scss";
+@import "ibg-style.scss";
+@import "mixins.scss";
+//===НАЧАЛО СТИЛЯ===//
+.page {
+	min-height: 100%;
+	font-family: consolas;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	background-color: #200320;
+	padding: 50px;
+	display: flex;
+}
+.hello{
+	display: flex;
+	flex-direction: row;
+	min-width: 100%;
+	&__title{
+		flex:0 1 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 500px;
+		min-height: 100px;
+		font-size: 24px;
+		padding: 15px 30px;
+		text-transform: uppercase;
+		border-radius: 50px;
+		letter-spacing: 8px;
+		overflow: hidden;
+		transition: 0.35s;
+		border: 2px solid #EF006FFF;
+		color:#EF006FFF;
+		text-align: center;
+	}
+	&__burger{
+		display: none;
+	}
+	&__menu {
+		margin: 0 0 0 50px;
+		display: flex;
+		flex-direction: row;
+		flex: 1 0 auto;
+		justify-content: space-around;
+		align-items: center;
+		border: 2px solid #EF006FFF;
+		border-radius: 50px;
+	}
+}
+.point a{
+	color:#EF006FFF;
+	font-size: 24px;
+	text-transform: uppercase;
+	transition: 200ms;
+}
+.point a:hover{
+	text-shadow: 0 0 10px #EF006FFF, 0 0 20px #EF006FFF, 0 0 30px #EF006FFF, 0 0 40px #EF006FFF, 0 0 50px #EF006FFF, 0 0 60px #EF006FFF;
+}
+.hello__title:hover{
+	color: #5A0133;
+	background: #EF006FFF;
+	box-shadow: 0 0 10px #EF006FFF, 0 0 40px #EF006FFF, 0 0 80px #EF006FFF;
+	transition-delay: 50ms;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+footer{
+	background-color: #001818;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+}
+.bye {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 500px;
+	min-height: 100px;
+	font-size: 24px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	letter-spacing: 8px;
+	overflow: hidden;
+	transition: 0.35s;
+	border: 2px solid #00FFFDFF;
+	color:#00FFFDFF;
+	text-align: center;
+}
+.bye:hover{
+	color: #005656;
+	background: #00FFFDFF;
+	box-shadow: 0 0 10px #00FFFDFF, 0 0 40px #00FFFDFF, 0 0 80px #00FFFDFF;
+	transition-delay: 50ms;
+}
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 300px;
+	min-height: 100px;
+	font-size: 24px;
+	font-family: consolas;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0.35s;
+	text-align: center;
+	margin: 30px 0;
+}
+.block {
+	background-color: #032003;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	&__raw {
+		padding: 5px;
+		flex: 1 0 auto;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__b2{
+		color: #21C400;
+		border: 2px solid #21C400;
+		background-color: #032003;
+	}
+	&__b2:hover{
+		color: #255700;
+		background: #21C400;
+		box-shadow: 0 0 10px #21C400, 0 0 40px #21C400, 0 0 80px #21C400;
+		transition-delay: 50ms;
+	}
+	&__text {
+		color: #000;
+		font-family: comic sans ms, consolas, sans-serif;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex: 0 1 30%;
+	}
+}
+.block__title{
+	color: #21C400;
+	font-size: 35px;
+	margin: 0 0 20px 0;
+	transition: 350ms;
+	padding: 15px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px #21C400, 0 0 20px #21C400;
+}
+.block__title:hover{
+	text-shadow: 0 0 10px #21C400, 0 0 20px #21C400, 0 0 30px #21C400, 0 0 40px #21C400, 0 0 50px #21C400, 0 0 60px #21C400;
+}
+.block__sub{
+	color: #21C400;
+	display: flex;
+	text-align: center;
+	font-size: 25px;
+	line-height: 25px;
+	margin: 0 0 20px 0;
+	animation: neong 8s linear infinite 1.5s;
+	line-height: 30px;
+}
+
+@keyframes neong {
+	0%{
+		text-shadow: 0 0 10px #21C400, 0 0 20px #21C400;
+	}
+	74%{
+		text-shadow: 0 0 10px #21C400, 0 0 20px #21C400;
+	}
+	75%{
+		text-shadow: 0 0 0px #21C400, 0 0 0px #21C400;
+	}
+	76%{
+		text-shadow: 0 0 10px #21C400, 0 0 20px #21C400;
+	}
+	78%{
+		text-shadow: 0 0 10px #21C400, 0 0 20px #21C400;
+	}
+	79%{
+		text-shadow: 0 0 0px #21C400, 0 0 0px #21C400;
+	}
+	80%{
+		text-shadow: 0 0 10px #21C400, 0 0 20px #21C400;
+	}
+	100%{
+		text-shadow: 0 0 10px #21C400, 0 0 20px #21C400;
+	}
+}
+@media screen and (max-width: 1500px){
+	.hello{
+		&__title{
+			min-width: 250px;
+			min-height: 50px;
+		}
+	}
+}
+@media screen and (max-width: 1110px){
+	body.lock{
+		overflow: hidden;
+	}
+	header{
+		position: fixed;
+		min-width: 100%;
+		max-height: 50px;
+		z-index: 50;
+	}
+	header:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #200320;
+		z-index: 2;
+	}
+	.wrapper{
+		margin: 80px 0 0 0;
+	}
+	.hello{
+		align-items: center;
+		justify-content: space-between;
+		&__title{
+			min-width: 200px;
+			min-height: 50px;
+			font-size: 18px;
+			padding: 5px 5px;
+			border-radius: 50px;
+			letter-spacing: 4px;
+			z-index: 5;
+		}
+		&__burger{
+			display: block;
+			position: relative;
+			width: 30px;
+			height: 20px;
+			z-index: 5;
+		}
+		&__burger span{
+			position: absolute;
+			background-color: #EF006FFF;
+			left: 0;
+			width: 30px;
+			height: 2px;
+			top: 9px;
+			transition: 400ms;
+		}
+		&__burger:before,
+		&__burger:after{
+			content: '';
+			background-color: #EF006FFF;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: 250ms;
+		}
+		&__burger:before{
+			top: 0;
+		}
+		&__burger:after{
+			bottom: 0;
+		}
+		&__menu {
+			position: fixed;
+			top: -100%;
+			left: 0;
+			padding: 100px 0 10px 0;
+			margin: 0 0 0 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: #001818;
+			border: 0px solid #EF006FFF;
+			border-radius: 0;
+			flex-direction: column;
+			transition: 400ms;
+		}
+		&__menu.active {
+			top: 0;
+		}
+		&__burger.active:before{
+			transform: rotate(45deg);
+			top: 9px;
+		}
+		&__burger.active:after{
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+	span.active{
+		transform: scale(0);
+	}
+	}
+	.point {
+		margin: 5px 0;
+	}
+	.point a{
+		font-size: 36px;
+		color: #00FFFDFF;
+		margin: 25 0 25px 0;
+	}
+	.point a:hover{
+		text-shadow: 0 0 10px #00FFFDFF, 0 0 40px #00FFFDFF, 0 0 80px #00FFFDFF;
+		transition-delay: 50ms;
+	}
+}
+@media screen and (max-width: 550px){
+	header{
+		padding: 50px 10px;
+	}
+	.bye{
+		min-width: 250px;
+		font-size: 20px;
+		padding: 15px 15px;
+		letter-spacing: 6px;
+	}
+	.button{
+		min-width: 250px;
+		font-size: 20px;
+		padding: 15px 15px;
+		letter-spacing: 4px;
+	}
+}
