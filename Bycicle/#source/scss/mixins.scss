@@ -1,0 +1,2 @@
+@mixin flexbox(){display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display:flex;font-size: 0;}
+@mixin tr($x,$y,$z){transform: translate3d($x,$y,$z); -webkit-transform:translate3d($x,$y,$z);-ms-transform:translate3d($x,$y,$z);}
