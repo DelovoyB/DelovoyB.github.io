@@ -11,7 +11,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #f1f1f1;
+	background-color: #F2DDDD;
 }
 .skills {
 	width: 100%;
@@ -32,11 +32,22 @@ body{
 	}
 	&__per {
 		height: 20px;
-		background-color: #0FBC00;
 		border-radius: 50px;
 		width: 0;
 		position: relative;
 		transition: 1.5s;
+		&_g{
+			background: linear-gradient(90deg,#FF0000FF,#FFEC00FF);
+		}
+		&_y{
+			background: linear-gradient(90deg,#0026FFFF,#B200FFFF);
+		}
+		&_b{
+			background: linear-gradient(90deg,#00FF19FF,#0026FFFF);
+		}
+		&_r{
+			background: linear-gradient(90deg,#FFD800FF,#B200FFFF);
+		}
 	}
 	&__per::before{
 		content: attr(per);

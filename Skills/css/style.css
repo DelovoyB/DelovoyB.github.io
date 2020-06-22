@@ -83,7 +83,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #f1f1f1; }
+  background-color: #F2DDDD; }
 
 .skills {
   width: 100%;
@@ -103,13 +103,32 @@ body {
 
 .skill__per {
   height: 20px;
-  background-color: #0FBC00;
   border-radius: 50px;
   width: 0;
   position: relative;
   -webkit-transition: 1.5s;
   -o-transition: 1.5s;
   transition: 1.5s; }
+  .skill__per_g {
+    background: -webkit-gradient(linear, left top, right top, from(#FF0000FF), to(#FFEC00FF));
+    background: -webkit-linear-gradient(left, #FF0000FF, #FFEC00FF);
+    background: -o-linear-gradient(left, #FF0000FF, #FFEC00FF);
+    background: linear-gradient(90deg, #FF0000FF, #FFEC00FF); }
+  .skill__per_y {
+    background: -webkit-gradient(linear, left top, right top, from(#0026FFFF), to(#B200FFFF));
+    background: -webkit-linear-gradient(left, #0026FFFF, #B200FFFF);
+    background: -o-linear-gradient(left, #0026FFFF, #B200FFFF);
+    background: linear-gradient(90deg, #0026FFFF, #B200FFFF); }
+  .skill__per_b {
+    background: -webkit-gradient(linear, left top, right top, from(#00FF19FF), to(#0026FFFF));
+    background: -webkit-linear-gradient(left, #00FF19FF, #0026FFFF);
+    background: -o-linear-gradient(left, #00FF19FF, #0026FFFF);
+    background: linear-gradient(90deg, #00FF19FF, #0026FFFF); }
+  .skill__per_r {
+    background: -webkit-gradient(linear, left top, right top, from(#FFD800FF), to(#B200FFFF));
+    background: -webkit-linear-gradient(left, #FFD800FF, #B200FFFF);
+    background: -o-linear-gradient(left, #FFD800FF, #B200FFFF);
+    background: linear-gradient(90deg, #FFD800FF, #B200FFFF); }
 
 .skill__per::before {
   content: attr(per);
