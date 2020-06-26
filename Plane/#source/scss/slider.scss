@@ -1,0 +1,29 @@
+// Слайдер
+.slick-slider{}
+// Ограничивающая оболочка
+.slick-list{}
+// Лента слайдов
+.slick-track{}
+
+// Слайд
+.slick-slide{}
+// Слайд активный
+.slick-slide.slick-active{}
+// Слайд основной
+.slick-slide.slick-current{}
+// Слайд по центру
+.slick-slide.slick-center{}
+
+// Стрелка
+.slick-arrow
+// Стрелка влево
+.slick-arrow.slick-prev{}
+// Стрелка вправо
+.slick-arrow.slick-next{}
+// Стрелка не активная
+.slick-arrow.slick-disabled{}
+
+// Точки
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
